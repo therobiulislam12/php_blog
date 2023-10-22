@@ -158,7 +158,7 @@
 
     <main class="form-signin w-100 m-auto">
         <form method="post">
-            <a href="/blog/public">
+            <a href="/blog/public/home.php">
                 <img class="mb-4 rounded-circle shadow" src="assets/images/logo.jpg" alt="" width="150" height="150">
             </a>
             <h1 class="h3 mb-3 fw-normal">Create an account</h1>
