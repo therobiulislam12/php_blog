@@ -158,7 +158,7 @@
 
     <main class="form-signin w-100 m-auto">
         <form method="post">
-            <a href="/blog/public/home.php">
+            <a href="/blog/public/">
                 <img class="mb-4 rounded-circle shadow" src="assets/images/logo.jpg" alt="" width="150" height="150">
             </a>
             <h1 class="h3 mb-3 fw-normal">Create an account</h1>
@@ -187,7 +187,7 @@
                 </label>
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">Create account</button>
-            <div class="my-4 text-center">Already have any account? <a href="login.php">Login</a></div>
+            <div class="my-4 text-center">Already have any account? <a href="login">Login</a></div>
             <p class="mt-5 mb-3 text-body-secondary text-center">Copyright &copy; 2017– <?php echo date('Y') ?> All rights reserved</p>
         </form>
     </main>

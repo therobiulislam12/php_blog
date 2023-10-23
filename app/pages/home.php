@@ -42,6 +42,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/headers.css" rel="stylesheet">
     <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/features.css" rel="stylesheet">
 
     <!-- Slider Enabled -->
     <link rel="stylesheet" href="assets/css/my-blog-slider.css">
@@ -133,7 +134,7 @@
         </symbol>
     </svg>
 
-    <header class="p-3 mb-3 border-bottom shadow">
+    <header class="p-3 border-bottom">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/blog/public/home.php" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -141,7 +142,9 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/blog/public/home.php" class="nav-link px-2 link-body-emphasis">Home</a></li>
+                    <li><a href="/blog/public" class="nav-link px-2 link-body-emphasis">Home</a></li>
+                    <li><a href="/blog/public/blog" class="nav-link px-2 link-body-emphasis">Blog</a></li>
+                    <li><a href="/blog/public/contact" class="nav-link px-2 link-body-emphasis">Contact Us</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -153,9 +156,9 @@
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Admin</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -166,8 +169,9 @@
         </div>
     </header>
 
-    <main class="py-4">
-        <div class="container">
+    <main>
+        <!-- Slider Added -->
+        <div class="slider">
             <div class="ism-slider" data-play_type="loop" id="my-blog-slider">
                 <ol>
                     <li>
@@ -189,6 +193,55 @@
                 </ol>
             </div>
         </div>
+        <!-- Slider End -->
+
+        <!-- Featured Blog Post section start -->
+        <div class="blog_featured py-4">
+            <div class="container">
+                <h2 class="my-4">Feature Posts</h2>
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-body-secondary">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-5 d-lg-block">
+                                <img src="assets/images/1.jpg" alt="" class="bd-placeholder-img w-100 object-fit-cover" width="200" height="250">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-body-secondary">Nov 11</div>
+                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-5 d-lg-block">
+                                <img src="assets/images/4.jpg" alt="" class="bd-placeholder-img w-100 object-fit-cover" width="200" height="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Blog Post section end -->
         <div class="container">
             <div class="row">
                 <h1>Content Start Here</h1>
@@ -211,18 +264,18 @@
             <div class="col mb-3">
                 <h5>Go Out</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Login</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sign Up</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Admin</a></li>
+                    <li class="nav-item mb-2"><a href="/blog/public" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="login" class="nav-link p-0 text-body-secondary">Login</a></li>
+                    <li class="nav-item mb-2"><a href="signup" class="nav-link p-0 text-body-secondary">Sign Up</a></li>
+                    <li class="nav-item mb-2"><a href="admin" class="nav-link p-0 text-body-secondary">Admin</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
                 <h5>Useful Links</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="admin.php" class="nav-link p-0 text-body-secondary">Admin Dashboard</a></li>
-                    <li class="nav-item mb-2"><a href="login.php" class="nav-link p-0 text-body-secondary">Login</a></li>
+                    <li class="nav-item mb-2"><a href="admin" class="nav-link p-0 text-body-secondary">Admin Dashboard</a></li>
+                    <li class="nav-item mb-2"><a href="login" class="nav-link p-0 text-body-secondary">Login</a></li>
                 </ul>
             </div>
 
