@@ -1,3 +1,7 @@
+<?php 
+$pages_url = $_REQUEST['url'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +17,7 @@
         <div class="row text-center py-5">
             <div class="not-found-content">
                 <h1>Page Not Found</h1>
+                <p class="text-body-secondary"><span class="text-primary fw-bold"><?php echo "$pages_url"; ?></span> is not a valid page</p>
                 <a href="/blog/public"><button class="btn btn-primary">Go Back Home</button></a>
                 <img src="assets/images/404.jpeg" alt="" class="img-thumbnail mt-4">
             </div>
